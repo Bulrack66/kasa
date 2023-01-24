@@ -1,5 +1,5 @@
 import './Lodging.scss';
-import Slideshow from '../Slide/Slide';
+
 
 
 function Lodging() {

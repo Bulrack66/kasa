@@ -1,8 +1,14 @@
 import React from 'react';
-import './Footer.scss'
+import './Footer.scss';
+import logoFooter from '../../assets/logo-footer.png';
 
 export default function Footer() {
   return (
-    <div>Footer</div>
+    <footer>
+      <div className='box-footer'>
+          <img src={logoFooter}></img>
+          <p>© 2020 Kasa. All rights reserved</p>
+      </div>
+    </footer>
   )
 }

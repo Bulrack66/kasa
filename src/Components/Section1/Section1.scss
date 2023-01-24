@@ -1,0 +1,22 @@
+.section1{
+    position: relative;
+    display: flex;
+    .background1{
+        border-radius: 25px;
+        filter: brightness(0.5);
+        width: 100%;
+    }
+    .title{
+        width: 100%;
+        margin: 0px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 142.6%;
+        position: absolute;
+        color: #FFFFFF;
+    }
+}
