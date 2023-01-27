@@ -1,10 +1,13 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Banner.scss';
-import img from '../../assets/logo-kasa-full.png'
+import img from '../../assets/logo-kasa-full.png';
 
 function Header() {
+  const location = useLocation();
+  console.log(location);
   return (
-    <div className="Header">
+    <div className={ "Header "}>
+      {/* + location.pathname.replace(/\//g,'') */}
       <img src={img} className='sizing-img'></img>
       <nav className='Navbar'>
         <Link to="/">Accueil</Link>

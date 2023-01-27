@@ -1,0 +1,38 @@
+.box-presentation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .box-lodging-about{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        .title-lodging{
+            padding: 0px;
+            margin: 0px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 142.6%;
+        }
+        .location-lodging{
+            padding: 0px;
+            margin: 0px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 142.6%;
+        }
+    }
+    .box-profil-about{
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+}
+.collapse-box{
+    display:flex;
+    flex-direction: row;
+    column-gap: 15px;
+    justify-content: space-between;
+    .callapse-lodging{
+        flex-basis: 49%;
+    }
+}

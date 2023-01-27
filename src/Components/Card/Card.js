@@ -20,8 +20,9 @@ const [data, setData] = useState([]);
       <div>
         <div className="box-card">
           {data.map(item =>(
-            <a className='cards' key={item.id} href={`http://localhost:3000/lodging/:${item.id}`}>
-              <img src={item.cover} className='cards-img'></img><div className='overlay'></div><p className='text-cards'>{item.title}</p>
+            <a className='cards' key={item.id} href={`http://localhost:3000/lodging/${item.id}`}>
+              <img src={item.cover} className='cards-img'></img><div className='overlay'></div>
+              <p className='text-cards'>{item.title}</p>
             </a>
           ))}
         </div>
