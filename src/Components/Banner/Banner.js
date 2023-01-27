@@ -4,7 +4,6 @@ import img from '../../assets/logo-kasa-full.png';
 
 function Header() {
   const location = useLocation();
-  console.log(location);
   return (
     <div className={ "Header "}>
       {/* + location.pathname.replace(/\//g,'') */}

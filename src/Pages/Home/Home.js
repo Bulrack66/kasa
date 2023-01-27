@@ -1,6 +1,6 @@
 import './Home.scss';
-import Section1 from '../Section1/Section1'
-import Card from '../Card/Card'
+import Section1 from '../../Components/Section1/Section1'
+import Card from '../../Components/Card/Card'
 
 function Home() {
   return (

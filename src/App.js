@@ -1,10 +1,10 @@
 import './App.scss';
 import { Routes, Route } from 'react-router-dom';
 import Banner from './Components/Banner/Banner';
-import Home from "./Components/Home/Home";
-import Lodging from './Components/Lodging/Lodging';
-import About from './Components/About/About';
-import Error from './Components/Error/Error';
+import Home from "./Pages/Home/Home";
+import Lodging from './Pages/Lodging/Lodging';
+import About from './Pages/About/About';
+import Error from './Pages/Error/Error';
 import Footer from './Components/Footer/Footer';
 
 function App() {

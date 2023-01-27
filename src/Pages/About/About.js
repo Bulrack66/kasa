@@ -1,7 +1,7 @@
 import React from 'react';
-import Section2 from '../Section2/Section2'
+import Section2 from '../../Components/Section2/Section2'
 import './About.scss';
-import Collapse from '../Collapse/Collapse'
+import Collapse from '../../Components/Collapse/Collapse'
 
 export default function About() {
   const reliability = {
