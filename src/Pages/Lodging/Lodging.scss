@@ -2,10 +2,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 10px 0px;
     .box-lodging-about{
         display: flex;
         align-items: flex-start;
         flex-direction: column;
+        row-gap: 5px;
         .title-lodging{
             padding: 0px;
             margin: 0px;
@@ -25,6 +27,7 @@
         display: flex;
         align-items: flex-end;
         flex-direction: column;
+        
     }
 }
 .collapse-box{
@@ -32,8 +35,30 @@
     flex-direction: row;
     column-gap: 15px;
     justify-content: space-between;
-    .callapse-lodging{
+    .collapse-lodging{
         flex-basis: 49%;
     }
     
+}
+
+.tags{
+    display: flex;
+    column-gap: 10px;
+    margin-top: 20px;
+    .tag{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        min-width: 115px;
+        padding: 4px 10px;
+        background: #FF6060;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 142.6%;
+        /* identical to box height, or 20px */
+        text-align: center;
+        color: #FFFF
+    }
 }

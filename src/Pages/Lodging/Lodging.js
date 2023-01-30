@@ -1,6 +1,6 @@
 import './Lodging.scss';
 import React, { useEffect, useState } from 'react';
-import {useParams} from 'react-router-dom';
+import { useParams} from 'react-router-dom';
 import axios from 'axios';
 import Collapse from '../../Components/Collapse/Collapse';
 import Profils from '../../Components/Profils/Profils';
@@ -25,6 +25,8 @@ React.useEffect(() => {
   getPost();
 }, []);
 
+
+
 if (!data) return null;
 
   return (
@@ -34,7 +36,7 @@ if (!data) return null;
           <div className='box-lodging-about'>
             <h2 className='title-lodging'>{data.title}</h2>
             <h3 className='location-lodging'>{data.location}</h3>
-            <div>Tags</div>
+            <div className='tags'>{data.tags.map(t=>(<div className='tag'>{t}</div>))}</div>
           </div>
         <div className='box-profil-about'>
             <div><Profils avatar={data.host.picture} name={data.host.name}/></div>
@@ -42,11 +44,11 @@ if (!data) return null;
         </div>
       </div>
       <div className='collapse-box'>
-        <div className='callapse-lodging'>
+        <div className='collapse-lodging'>
           <Collapse title={'Description'} content={data.description}/>
         </div>
-        <div className='callapse-lodging equipments'>
-          <Collapse title={'Equipements'} content={data.equipments}/>
+        <div className='collapse-lodging equipments'>
+          <Collapse title={'Equipements'} content={data.equipments} />
         </div>
       </div>
     </div>
