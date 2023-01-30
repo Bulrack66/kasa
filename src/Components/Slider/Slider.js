@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import axios from 'axios';
-import Vector from "../../assets/arrow.png";
+import Vector from "../../assets/big-arrow.png";
 import "./Slider.scss";
 
-export default function Slider({picturesFiles}) {
+export default function Slider({pictures}) {
 
   const [current, setCurrent] = useState(0);
 
@@ -13,7 +11,7 @@ export default function Slider({picturesFiles}) {
    * slide.
    */
   const nextSlide = () => {
-    setCurrent(current === picturesFiles.length - 1 ? 0 : current + 1);
+    setCurrent(current === pictures.length - 1 ? 0 : current + 1);
   };
 
   /**
@@ -21,20 +19,20 @@ export default function Slider({picturesFiles}) {
    * set the current slide to the previous slide.
    */
   const prevSlide = () => {
-    setCurrent(current === 0 ? picturesFiles.length - 1 : current - 1);
+    setCurrent(current === 0 ? pictures.length - 1 : current - 1);
   };
 
   return (
     <div className="slider">
       {/* Showing slider navigation buttons */}
       <button className="vectorPrev">
-        <img src={Vector} onClick={prevSlide} alt="fleche" />
+        <img className='vector' src={Vector} onClick={prevSlide} alt="fleche" />
       </button>
       <button className="vectorNext">
-        <img src={Vector} onClick={nextSlide} alt="fleche" />
+        <img className='vector' src={Vector} onClick={nextSlide} alt="fleche" />
       </button>
       {/* Images */}
-      {picturesFiles.map((img, index) => {
+      {pictures.map((img, index) => {
         return (
           <div key={index}>
             {index === current && (
@@ -46,7 +44,7 @@ export default function Slider({picturesFiles}) {
             )}
             {index === current && (
               <strong className="image-number">
-                {current + 1}/{picturesFiles.length}
+                {current + 1}/{pictures.length}
               </strong>
             )}
           </div>

@@ -2,19 +2,23 @@ import React, { Fragment, useEffect, useState } from 'react';
 import './Card.scss';
 import axios from 'axios';
 
+const client = axios.create({
+  baseURL: `http://localhost:4000/api/products` 
+});
 
 export default function Card() {
-const url = 'http://localhost:4000/api/products';
-const [data, setData] = useState([]);
 
-    useEffect(() => {
-      const fetchData = async () => {
-        const result = await axios(url);
-        setData(result.data);
-      };
-      fetchData();
-    })
+const [data, setData] = React.useState(null);
 
+React.useEffect(() => {
+  async function getPost() {
+    const response = await client.get(``);
+    setData(response.data);
+  }
+  getPost();
+}, []);
+
+if (!data) return null;
   return (
     <Fragment>
       <div>

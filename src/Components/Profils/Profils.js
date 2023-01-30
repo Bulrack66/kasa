@@ -4,9 +4,9 @@ import './Profiles.scss'
 export default function Profils({avatar, name}) {
 
   return (
-    <div>
-        {avatar}
-        {name}
+    <div className='Profils'>
+      <p className='name'>{name}</p>
+      <img className='avatarPicture' src={avatar} alt="Photo de profile"></img>
     </div>
   )
 }

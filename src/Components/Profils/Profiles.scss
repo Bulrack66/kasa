@@ -1,0 +1,14 @@
+.Profils{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    row-gap: 10px;
+    .name{
+        width:93px;
+    }
+    .avatarPicture{
+        width: 64px;
+        border-radius: 50%;
+        margin-left: 10px;
+    }
+}
