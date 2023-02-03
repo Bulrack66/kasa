@@ -1,18 +1,29 @@
 footer {
-    
+    bottom: 0px;
     width: 100%;
-    
-    margin: 0px;
+    margin: auto;
     background: #000000;
-    padding: 50px 0px;
     *{
         color: #FFFFFF;
     }
-    .box-footer{
+    .Footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 12px;
+        font-size: 24px;
+        line-height: 34px;
+        font-weight: 500;
+        img{
+            margin-top: 36px;
+            width: 90px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    footer{
+        margin-top: 20px;
+        width: 100%;
     }
 }

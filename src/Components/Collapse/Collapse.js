@@ -8,15 +8,14 @@ const Collapse = ({title, content}) => {
   const toggle = () => {
     setOPen(!open);
   };
-  const arrayContent = [];
-  arrayContent.push(content)
+
   return (
-    <div>
-      <div onClick={toggle} className='btn-collapse'>{title}<img src={Arrow} className={open ? 'arrow arrow-up' : "arrow arrow-down"}></img></div>
-      <div className={open ? "content-show" : "content-parent"}>
-        {arrayContent.length <= 1 
-        ? arrayContent.map(c=>(<div>{c}</div>))
-        : arrayContent.map((c,index)=>(<li key={index}>{c}</li>))}
+    <div className="Collapse">
+      <div onClick={toggle} className='btn-collapse'>{title}<img src={Arrow} className={open ? 'arrow arrow_up' : " arrow arrow_down"}></img></div>
+      <div className={open ? "content content-show" : "content content-parent"}>
+        {typeof content === 'object'
+        ? content.map((c,index)=>(<li key={index}>{c}</li>))
+        : <div >{content}</div> }
       </div>
     </div>
   )

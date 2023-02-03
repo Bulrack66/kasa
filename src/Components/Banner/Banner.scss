@@ -1,14 +1,22 @@
-.Header{
+.Banner{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 35px 0px;
+    .Navbar{
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .sizing-img{
+        width: 150px;
+    }
 }
-.Navbar{
-    width: 200px;
-    display: flex;
-    justify-content: space-between;
-}
-.sizing-img{
-    width: 150px;
+@media (max-width: 415px) {
+    .Banner{
+        margin: 25px;
+        .sizing-img{
+            width: 100px;
+        }
+    }
 }

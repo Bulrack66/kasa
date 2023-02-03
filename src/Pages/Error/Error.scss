@@ -1,4 +1,37 @@
-.error{
-    background-color: #FFFFFF;;
-    padding: 200px;
+.Error{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #FFFFFF;
+    font-size: 36px;
+    .link{
+        font-size: 18px;
+        margin: 115px;
+        display: block;
+        line-height: 25.67px
+    }
+    h1{
+        font-weight: 700;
+        font-size: 288px;
+        line-height: 411px;
+        margin: auto;
+    }
+    p{
+        margin: 0px;
+    }
+}
+@media (max-width: 400px) {
+    .Error{
+        font-size: 18px;
+        .link{
+            font-size: 14px;
+            margin: 68px auto;
+        }
+        h1{
+            font-weight: 700;
+            font-size: 96px;
+            line-height: 137px;
+            margin: 50px auto;
+        }
+    }
 }

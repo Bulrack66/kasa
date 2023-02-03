@@ -1,6 +1,7 @@
 import React from 'react';
 import colorStar from '../../assets/star-color.png';
 import greyStar from '../../assets/star-grey.png';
+import './Ratings.scss'
 
 export default function Ratings(rating) {
 
@@ -9,7 +10,7 @@ export default function Ratings(rating) {
     
   return (
     
-    <div className='stars-contener2'>
+    <div className='stars-contener'>
         {fullCircles.slice(5-rating.rating).map((fullCircle, index )=> {
         return <img key={index} src={fullCircle}></img>
         })}

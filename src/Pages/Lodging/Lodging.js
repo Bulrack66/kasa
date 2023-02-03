@@ -1,6 +1,6 @@
 import './Lodging.scss';
-import React, { useEffect, useState } from 'react';
-import { useParams} from 'react-router-dom';
+import React,{ useEffect, useState } from 'react';
+import { useParams, redirect, useNavigate} from 'react-router-dom';
 import axios from 'axios';
 import Collapse from '../../Components/Collapse/Collapse';
 import Profils from '../../Components/Profils/Profils';
@@ -14,29 +14,35 @@ const client = axios.create({
 export default function Lodging() {
 
 const {id} = useParams();
+const navigate = useNavigate();
 
-const [data, setData] = React.useState(null);
+const [data, setData] = useState(null);
 
-React.useEffect(() => {
-  async function getPost() {
-    const response = await client.get(`/${id}`);
-    setData(response.data);
-  }
-  getPost();
+useEffect(() => {
+  // console.log('coucou je ne comprend rien')
+  client.get(`/${id}`)
+  .then((response) => {
+    setData(response.data)
+  })
+  .catch((error) => {
+    if (error.response.status == 404) {
+      navigate("/error")
+    }
+  })
 }, []);
 
 
 
-if (!data) return null;
 
-  return (
-    <div>
+
+  return (data &&
+    <div className='Lodging'>
       <div><Slider pictures={data.pictures}/></div>
       <div className='box-presentation'>
           <div className='box-lodging-about'>
             <h2 className='title-lodging'>{data.title}</h2>
             <h3 className='location-lodging'>{data.location}</h3>
-            <div className='tags'>{data.tags.map(t=>(<div className='tag'>{t}</div>))}</div>
+            <div className='tags'>{data.tags.map((t, index)=>(<div key={index} className='tag'>{t}</div>))}</div>
           </div>
         <div className='box-profil-about'>
             <div><Profils avatar={data.host.picture} name={data.host.name}/></div>

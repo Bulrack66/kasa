@@ -21,3 +21,23 @@
         color: #FFFFFF;
     }
 }
+@media (max-width: 400px) {
+    .section1{
+        margin: 15px;
+        height: 111px;
+        .title{
+            font-size: 24px;
+            text-align: start;
+            margin: 10px;
+            top:10px;
+            white-space: pre-line;
+        }
+        .title2{
+            position: absolute;
+            top:30px;
+            margin: 10px;
+            color:#FFFFFF;
+            font-size: 24px;
+        }
+    }
+}

@@ -5,3 +5,13 @@
         width: 100%;
     }
 }
+
+@media (max-width: 400px) {
+    .section2{
+        .background2{
+            height: 223px;
+            object-fit: cover;
+        }
+        margin: 0px 25px 30px;
+    }
+}

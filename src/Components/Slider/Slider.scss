@@ -1,4 +1,4 @@
-.slider{
+.Slider{
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -43,4 +43,18 @@
     position: absolute;
     left: 50%;
     bottom: 20px;
+}
+
+@media (max-width: 415px) {
+    .Slider{
+        margin: 20px;
+    }
+    .slider-image{
+        width: 100%;
+        height: 255px;
+    }
+    .vector{
+        width:12px;
+        margin: 5px;
+    }
 }

@@ -23,7 +23,7 @@ export default function Slider({pictures}) {
   };
 
   return (
-    <div className="slider">
+    <div className="Slider">
       {/* Showing slider navigation buttons */}
       <button className="vectorPrev">
         <img className='vector' src={Vector} onClick={prevSlide} alt="fleche" />

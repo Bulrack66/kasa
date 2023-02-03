@@ -8,9 +8,10 @@ import Error from './Pages/Error/Error';
 import Footer from './Components/Footer/Footer';
 
 function App() {
+
   return (
     <div className="App">
-      <Banner/>
+      <Banner />
       <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />

@@ -62,3 +62,34 @@
         color: #FFFF
     }
 }
+
+@media (max-width: 415px) {
+    .box-presentation {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        .box-lodging-about {
+            .title-lodging{
+                font-size: 18px;
+            }
+            .location-lodging{
+                font-size: 14px;
+            }
+        }
+        .box-profil-about{
+            
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+        }
+        } 
+    .tags{
+        .tag{
+            min-width: 84px;
+            font-size: 10px;
+        }
+    }  
+    .collapse-box{
+        flex-direction: column;
+    }
+}
