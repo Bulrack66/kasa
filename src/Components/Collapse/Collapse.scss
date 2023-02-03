@@ -52,7 +52,7 @@
     border-radius: 10px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 415px) {
     .Collapse{
         margin: 0px 20px;
         .btn-collapse{
@@ -62,9 +62,12 @@
         }
         .content-show {
             height: 20vh;
+            font-size: 12px;
         }
         .content-parent{
             padding: 5px;
+            margin-bottom: 5px;
+            font-size: 12px;
         }
     }
     

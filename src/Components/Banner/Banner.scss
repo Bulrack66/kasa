@@ -6,7 +6,7 @@
     .Navbar{
         width: 200px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     .sizing-img{
         width: 150px;
@@ -15,8 +15,15 @@
 @media (max-width: 415px) {
     .Banner{
         margin: 25px;
+        .Navbar{
+            width:150px;
+            font-size: 12px;
+        }
+        a{
+            font-size: 12px;
+        }
         .sizing-img{
-            width: 100px;
+            width: 125px;
         }
     }
 }
