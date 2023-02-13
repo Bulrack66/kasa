@@ -2,15 +2,22 @@
 
 Projet 7 : Kasa - Agence de location immobilière
 
-![alt text](./public/Screen.png)
+![alt text](./public/Screen.png)![alt text](./public/Screen-mobil.png)
+
+
 
 ## Available Scripts
 
 In the project directory, you can run:
 
+### `Installing dependancies`
+
+From Back run "npm install"
+From React App run "yarn"
 ### `Run Back-End`
 
 In the terminal from back's folder run "nodemon"
+
 ### `yarn start`
 
 Runs the app in the development mode.\
