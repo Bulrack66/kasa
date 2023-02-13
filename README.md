@@ -2,7 +2,7 @@
 
 Projet 7 : Kasa - Agence de location immobilière
 
-![alt text](./public/Screen.png)![alt text](./public/Screen-mobile.png=150x)
+![alt text](./public/Screen.png)![alt text](./public/Screen-mobile.png =150x)
 
 ## Available Scripts
 
