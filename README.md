@@ -2,7 +2,7 @@
 
 Projet 7 : Kasa - Agence de location immobilière
 
-![alt text](./public/Screen.png)![alt text](./public/Screen-mobile.png)
+![alt text](./public/Screen.png)![alt text](./public/Screen-mobile.png=150x)
 
 ## Available Scripts
 
@@ -12,6 +12,7 @@ In the project directory, you can run:
 
 From Back run "npm install"
 From React App run "yarn"
+
 ### `Run Back-End`
 
 In the terminal from back's folder run "nodemon"
