@@ -23,12 +23,14 @@ export default function About() {
   }
 
   return (
-    <div className='about'>
+    <div className='About'>
         <Section2 />
-        <Collapse title={reliability.title} content={reliability.description}/>
-        <Collapse title={respect.title} content={respect.description}/>
-        <Collapse title={service.title} content={service.description}/>
-        <Collapse title={security.title} content={security.description}/>
+        <div class="collapse-about">
+          <Collapse title={reliability.title} content={reliability.description}/>
+          <Collapse title={respect.title} content={respect.description}/>
+          <Collapse title={service.title} content={service.description}/>
+          <Collapse title={security.title} content={security.description}/>
+        </div>
     </div>
   )
 }

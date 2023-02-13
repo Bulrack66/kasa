@@ -1,8 +1,11 @@
+.Lodging{
+    padding: 25px;
+}
 .box-presentation{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px 0px;
+    margin: 10px auto;
     .box-lodging-about{
         display: flex;
         align-items: flex-start;
@@ -35,6 +38,7 @@
     flex-direction: row;
     column-gap: 15px;
     justify-content: space-between;
+    margin: auto;
     .collapse-lodging{
         flex-basis: 49%;
     }
@@ -50,7 +54,7 @@
         align-items: center;
         justify-content: center;
         flex-wrap: nowrap;
-        min-width: 115px;
+        
         padding: 4px 10px;
         background: #FF6060;
         border-radius: 10px;
@@ -62,14 +66,19 @@
         color: #FFFF
     }
 }
-
-@media (max-width: 415px) {
+@media (max-width: 1245px) {
     .box-presentation {
-        margin: 20px;
+        width: 95%;
+    }
+}
+@media (max-width: 800px) {
+    .box-presentation {
+        
         display: flex;
         flex-direction: column;
         .box-lodging-about {
             .title-lodging{
+                text-align: start;
                 font-size: 18px;
             }
             .location-lodging{
@@ -77,7 +86,7 @@
             }
         }
         .box-profil-about{
-            
+            padding-top: 15px;
             flex-direction: row-reverse;
             align-items: center;
             justify-content: space-between;
@@ -85,7 +94,7 @@
         } 
     .tags{
         .tag{
-            min-width: 84px;
+            
             font-size: 10px;
         }
     }  

@@ -37,7 +37,7 @@ useEffect(() => {
 
   return (data &&
     <div className='Lodging'>
-      <div><Slider pictures={data.pictures}/></div>
+      <Slider pictures={data.pictures}/>
       <div className='box-presentation'>
           <div className='box-lodging-about'>
             <h2 className='title-lodging'>{data.title}</h2>

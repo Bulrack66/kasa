@@ -9,8 +9,8 @@ function Header() {
       {/* + location.pathname.replace(/\//g,'') */}
       <img src={img} className='sizing-img'></img>
       <nav className='Navbar'>
-        <Link to="/">ACCUEIL</Link>
-        <Link to="/about">A PROPOS</Link>
+        <Link to="/">Accueil</Link>
+        <Link to="/about">A propos</Link>
       </nav>
     </div>
   );

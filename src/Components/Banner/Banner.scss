@@ -2,28 +2,37 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 35px 0px;
+    padding: 25px;
     .Navbar{
-        width: 200px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+    }
+    a{
+        text-decoration: none;
+        margin-left: 20px;
+        &:hover{
+            text-decoration: underline;
+        }
     }
     .sizing-img{
+        display: inline;
         width: 150px;
     }
 }
-@media (max-width: 415px) {
+
+@media (max-width: 800px) {
     .Banner{
-        margin: 25px;
+        padding: 20px;
         .Navbar{
-            width:150px;
+            width:160px;
             font-size: 12px;
+            text-transform: uppercase;
         }
         a{
             font-size: 12px;
         }
         .sizing-img{
-            width: 125px;
+            width: 100px;
         }
     }
 }

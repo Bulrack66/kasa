@@ -3,10 +3,11 @@
         border-radius: 25px;
         filter: brightness(0.5);
         width: 100%;
+        margin-bottom: 15px;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 800px) {
     .section2{
         .background2{
             height: 223px;
