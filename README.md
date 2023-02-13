@@ -4,8 +4,6 @@ Projet 7 : Kasa - Agence de location immobilière
 
 ![alt text](./public/Screen.png)![alt text](./public/Screen-mobile.png)
 
-
-
 ## Available Scripts
 
 In the project directory, you can run:
