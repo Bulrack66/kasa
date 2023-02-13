@@ -19,7 +19,6 @@ function App() {
             <Route path='/lodging/:id' element={<Lodging />} />
             <Route path='/*' element={<Error />} />
         </Routes>
-        
       </div>
       <Footer/>
       </>
