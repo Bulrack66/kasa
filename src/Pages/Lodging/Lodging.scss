@@ -1,6 +1,4 @@
-.Lodging{
-    padding: 25px;
-}
+
 .box-presentation{
     display: flex;
     flex-direction: row;
@@ -67,13 +65,16 @@
     }
 }
 @media (max-width: 1245px) {
+    
     .box-presentation {
         width: 95%;
     }
 }
 @media (max-width: 800px) {
+    .Lodging{
+        padding: 25px;
+    }
     .box-presentation {
-        
         display: flex;
         flex-direction: column;
         .box-lodging-about {
