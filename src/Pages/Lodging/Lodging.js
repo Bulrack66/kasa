@@ -19,7 +19,6 @@ const navigate = useNavigate();
 const [data, setData] = useState(null);
 
 useEffect(() => {
-  // console.log('coucou je ne comprend rien')
   client.get(`/${id}`)
   .then((response) => {
     setData(response.data)
@@ -30,10 +29,6 @@ useEffect(() => {
     }
   })
 }, []);
-
-
-
-
 
   return (data &&
     <div className='Lodging'>

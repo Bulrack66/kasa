@@ -5,17 +5,17 @@ import './Ratings.scss'
 
 export default function Ratings(rating) {
 
-    const fullCircles = Array(5).fill(colorStar);
-    const emptyCircles = Array(5).fill(greyStar);
+    const fullStars = Array(5).fill(colorStar);
+    const emptyStars = Array(5).fill(greyStar);
     
   return (
     
     <div className='stars-contener'>
-        {fullCircles.slice(5-rating.rating).map((fullCircle, index )=> {
-        return <img key={index} src={fullCircle}></img>
+        {fullStars.slice(5-rating.rating).map((fullStars, index )=> {
+        return <img key={index} src={fullStars}></img>
         })}
-        {emptyCircles.slice(rating.rating).map((emptyCircles, index )=> {
-        return <img key={index} src={emptyCircles}></img>
+        {emptyStars.slice(rating.rating).map((emptyStars, index )=> {
+        return <img key={index} src={emptyStars}></img>
         })}   
     </div>
   )
