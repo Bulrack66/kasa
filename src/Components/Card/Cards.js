@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from 'react';
-import './Card.scss';
+import './Cards.scss';
 import axios from 'axios';
 
 const client = axios.create({

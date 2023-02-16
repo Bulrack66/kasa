@@ -25,7 +25,7 @@ export default function About() {
   return (
     <div className='About'>
         <Section2 />
-        <div class="collapse-about">
+        <div className="collapse-about">
           <Collapse title={reliability.title} content={reliability.description}/>
           <Collapse title={respect.title} content={respect.description}/>
           <Collapse title={service.title} content={service.description}/>

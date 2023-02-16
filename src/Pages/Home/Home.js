@@ -1,12 +1,12 @@
 import './Home.scss';
 import Section1 from '../../Components/Section1/Section1'
-import Card from '../../Components/Card/Card'
+import Cards from '../../Components/Card/Cards'
 
 function Home() {
   return (
     <div className="home">
       <Section1 />
-      <Card />
+      <Cards />
     </div>
   );
 }
