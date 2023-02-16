@@ -8,9 +8,9 @@ const client = axios.create({
 
 export default function Card() {
 
-const [data, setData] = React.useState(null);
+const [data, setData] = useState(null);
 
-React.useEffect(() => {
+useEffect(() => {
   async function getPost() {
     const response = await client.get(``);
     setData(response.data);
