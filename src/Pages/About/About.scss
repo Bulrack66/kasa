@@ -3,3 +3,10 @@
         padding: 45px;
     }
 }
+@media (max-width: 800px) {
+    .About{
+        .collapse-about{
+            padding: 0px 25px 15px;
+        }
+    }
+}
