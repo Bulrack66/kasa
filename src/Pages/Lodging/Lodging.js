@@ -1,6 +1,6 @@
 import './Lodging.scss';
 import React,{ useEffect, useState } from 'react';
-import { useParams, redirect, useNavigate} from 'react-router-dom';
+import { useParams, useNavigate} from 'react-router-dom';
 import axios from 'axios';
 import Collapse from '../../Components/Collapse/Collapse';
 import Profils from '../../Components/Profils/Profils';
